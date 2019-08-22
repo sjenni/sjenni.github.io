@@ -22,13 +22,13 @@ Education
 * **PhD in Computer Science** - University of Bern, 2017-present  
   **_Topics:_** Unsupervised learning methods with a focus on self-supervised feature learning
 
-Work experience
+Professional Experience
 ======
-* Summer 2016: Junior Data Analyst
-  * Philip Morris International
+* **Junior Data Analyst** - Philip Morris International, 2016  
+  I developed a Matlab tool for the automatic analysis of ciliary beating movies. The tool allows the extraction of key endpoints such as tissue activity and main beating frequencies with a higher accuracy compared to previous methods. By tracking tissue patches over different videos it also allows the analysis of regions over a longer period of time.
 
-* Fall 2015: Software Engineering Intern
-  * AdNovum 
+* **Software Engineering Intern** - AdNovum, 2015  
+  I worked on a mobile payment app, implementing several parts of the iOS version of the app in Objective-C. My main responsibilities were: Feature implementation, bug-fixing and Proof of Concept. The work took place in large teams and was managed with Scrum and the use of tools such as Jira and Confluence.
   
 Skills
 ======

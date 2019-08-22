@@ -40,16 +40,11 @@ Awards
   
 Skills
 ======
-* Programming Languages
-  * Python
-  * MATLAB/Octave
-  * Java
-  * Objective-C
-  * LaTeX
-* Languages
-  * German (native)
-  * English (fluent)
-  * French (proficient)
+* **Programming Languages:**  
+  Python, MATLAB/Octave, Java, Objective-C, LaTeX
+  
+* **Languages:**  
+  German (native), English (fluent), French (proficient)
 
 Publications
 ======

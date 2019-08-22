@@ -12,11 +12,15 @@ redirect_from:
 Education
 ======
 * **BSc in Computer Science** - University of Bern, 2015  
-  With minors in Mathematics (60 ECTS) and Physics (30 ECTS) – *magna cum laude*
-
+  With minors in Mathematics (60 ECTS) and Physics (30 ECTS) – *magna cum laude*  
+  **_Thesis Title:_** A Study of 3D Deformable Parts Models for Detection and Pose-Estimation
+  
 * **MSc in Computer Science** - University of Bern, 2017  
-  With specialization in Advanced Information Processing – *summa cum laude*
-* **PhD in Computer Science** - University of Bern, 2017-present
+  With specialization in Advanced Information Processing – *summa cum laude*  
+  **_Thesis Title:_** From Cartoons to Real Images: An Approach to Unsupervised Visual Representation Learning
+  
+* **PhD in Computer Science** - University of Bern, 2017-present  
+  **_Topics:_** Unsupervised learning methods with a focus on self-supervised feature learning
 
 Work experience
 ======

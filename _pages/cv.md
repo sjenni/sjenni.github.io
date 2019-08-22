@@ -11,9 +11,12 @@ redirect_from:
 
 Education
 ======
-* BSc in Computer Science, University of Bern, 2015
-* MSc in Computer Science, University of Bern, 2017
-* PhD in Computer Science, University of Bern, 2017-present
+* **BSc in Computer Science** - University of Bern, 2015  
+  With minors in Mathematics (60 ECTS) and Physics (30 ECTS) – *magna cum laude*
+
+* **MSc in Computer Science** - University of Bern, 2017  
+  With specialization in Advanced Information Processing – *summa cum laude*
+* **PhD in Computer Science** - University of Bern, 2017-present
 
 Work experience
 ======

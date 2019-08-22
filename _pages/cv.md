@@ -30,6 +30,14 @@ Professional Experience
 * **Software Engineering Intern** - AdNovum, 2015  
   I worked on a mobile payment app, implementing several parts of the iOS version of the app in Objective-C. My main responsibilities were: Feature implementation, bug-fixing and Proof of Concept. The work took place in large teams and was managed with Scrum and the use of tools such as Jira and Confluence.
   
+Awards
+======
+* **Joint Alumni Association in Computer Science (JAACS):**  
+  Award for the best Master Thesis in Computer Science (2017)
+  
+* **P.A.I.S.S. Best Poster Award:**  
+  Award for the poster on "Self-Supervised Feature Learning by Learning to Spot Artifacts" (2018)
+  
 Skills
 ======
 * Programming Languages

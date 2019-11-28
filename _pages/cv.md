@@ -44,7 +44,7 @@ Skills
   Python, MATLAB/Octave, Java, Objective-C, LaTeX
   
 * **Languages:**  
-  German (native), English (fluent), French (proficient)
+  German (native), English (fluent), French
 
 Publications
 ======

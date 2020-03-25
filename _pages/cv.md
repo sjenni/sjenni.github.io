@@ -37,6 +37,9 @@ redirect_from:
   
 * **P.A.I.S.S. Best Poster Award:**  
   Award for the poster on "Self-Supervised Feature Learning by Learning to Spot Artifacts" (2018)
+ 
+* **Paper Reviewing Recognitions:**  
+  CVPR2019 outstanding reviewer
   
 ## Skills
 

@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2018-deep-bilevel-learning
 excerpt: 'S. Jenni, and P. Favaro'
 date: 2018-01-01
-venue: 'European Conference on Computer Vision'
+venue: 'European Conference on Computer Vision 2018'
 citation: 'S. Jenni, and P. Favaro. &quot;Deep Bilevel Learning.&quot; In <i>ECCV 2018</i>.'
 ---
 

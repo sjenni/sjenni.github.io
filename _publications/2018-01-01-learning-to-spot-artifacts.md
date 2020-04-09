@@ -3,7 +3,7 @@ title: "Self-Supervised Feature Learning by Learning to Spot Artifacts"
 collection: publications
 permalink: /publication/2018-01-01-learning-to-spot-artifacts
 date: 2018-01-01
-venue: 'IEEE Conference on Computer Vision and Pattern Recognition (spotlight)'
+venue: 'IEEE Conference on Computer Vision and Pattern Recognition 2018 (spotlight)'
 citation: 'S. Jenni, and P. Favaro. &quot;Self-Supervised Feature Learning by Learning to Spot Artifacts.&quot; In <i>CVPR 2018</i>.'
 ---
 

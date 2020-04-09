@@ -5,7 +5,7 @@ permalink: /publication/2019-01-01-on-stabilizing-generative-adversarial-trainin
 excerpt: 'S. Jenni, and P. Favaro'
 date: 2019-01-01
 venue: 'IEEE Conference on Computer Vision and Pattern Recognition'
-citation: 'S. Jenni, and P. Favaro. &quot;On Stabilizing Generative Adversarial Training with Noise.&quot; <i>CVPR 2019</i>.'
+citation: 'S. Jenni, and P. Favaro. &quot;On Stabilizing Generative Adversarial Training with Noise.&quot; In <i>CVPR 2019</i>.'
 
 ---
 

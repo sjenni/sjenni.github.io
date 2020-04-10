@@ -14,7 +14,13 @@ I am a third-year PhD student in the Computer Vision Group at the University of 
 
 ## News
 
-* ***Mar 2020:*** A paper on self-supervised feature learning by recognizing transformations in global image statistics got accepted to CVPR2020 (oral)
+* ***March, 2020:*** A paper on self-supervised feature learning by recognizing transformations in global image statistics got accepted to CVPR2020 (oral)
 
-* ***Mar 2020:*** Our work on extreme face superresolution using audio was accepted to CVPR2020 (oral)
+* ***March, 2020:*** Our work on extreme face superresolution using audio was accepted to CVPR2020 (oral)
+
+* ***March, 2019:*** A paper on stabilzing generative adversarial training with noise was accepted to CVPR2019
+
+* ***July, 2018:*** A paper on improving generalization and robustness to label noise via bilevel optimization was accepted to ECCV2018
+
+* ***April, 2018:*** A paper on self-supervised feature learning by spotting artifacts was accepted to CVPR2018 (spotlight)
 

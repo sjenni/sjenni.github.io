@@ -14,6 +14,8 @@ I am a fourth-year PhD student in the Computer Vision Group at the University of
 
 ## News
 
+* ***July, 2020:*** Our paper on self-supervised video representation learning by learning to tell motions appart got accepted to ECCV2020
+
 * ***March, 2020:*** A paper on self-supervised feature learning by recognizing transformations in global image statistics got accepted to CVPR2020 (oral)
 
 * ***March, 2020:*** Our work on extreme face superresolution using audio was accepted to CVPR2020 (oral)

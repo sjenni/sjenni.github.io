@@ -39,7 +39,8 @@ redirect_from:
   Award for the poster on "Self-Supervised Feature Learning by Learning to Spot Artifacts" (2018)
  
 * **Paper Reviewing Recognitions:**  
-  CVPR, outstanding reviewer (2019)
+  CVPR, outstanding reviewer (2019)<br/>
+  ECCV, top reviewer (2020)
   
 ## Skills
 

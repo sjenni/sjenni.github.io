@@ -7,7 +7,7 @@ venue: 'European Conference on Computer Vision 2020'
 citation: 'S. Jenni, G. Meishvili, and P. Favaro. &quot;Video Representation Learning by Recognizing Temporal Transformations.&quot; In <i>ECCV 2020</i>.'
 ---
 
-[[Project Page]](https://sjenni.github.io/temporal-ssl/) [[Code]](https://github.com/sjenni/temporal-ssl) 
+[[PDF]](https://arxiv.org/pdf/2007.10730.pdf) [[Project Page]](https://sjenni.github.io/temporal-ssl/) [[Code]](https://github.com/sjenni/temporal-ssl) 
 
 ## Abstract
 

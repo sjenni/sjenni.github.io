@@ -5,6 +5,7 @@ type: "BSc course"
 permalink: /teaching/2017-machine-learning
 venue: "University of Bern"
 date: 2017-01-01
+years: 2017-2019
 location: "Bern, Switzerland"
 ---
 

@@ -11,16 +11,17 @@ redirect_from:
 
 ## Education
 
-* **BSc in Computer Science** - University of Bern, 2015  
-  With minors in Mathematics (60 ECTS) and Physics (30 ECTS) – *magna cum laude*  
-  **_Thesis Title:_** A Study of 3D Deformable Parts Models for Detection and Pose-Estimation
-  
+* **PhD in Computer Science** - University of Bern, 2017-present  
+  **_Topics:_** Analysis and design of self-supervised learning methods
+  **_Advisor:_** Prof. Paolo Favaro
+
 * **MSc in Computer Science** - University of Bern, 2017  
   With specialization in Advanced Information Processing – *summa cum laude*  
   **_Thesis Title:_** From Cartoons to Real Images: An Approach to Unsupervised Visual Representation Learning
   
-* **PhD in Computer Science** - University of Bern, 2017-present  
-  **_Topics:_** Unsupervised learning methods with a focus on self-supervised feature learning
+* **BSc in Computer Science** - University of Bern, 2015  
+  With minors in Mathematics (60 ECTS) and Physics (30 ECTS) – *magna cum laude*  
+  **_Thesis Title:_** A Study of 3D Deformable Parts Models for Detection and Pose-Estimation
 
 ## Professional Experience
 
@@ -30,6 +31,12 @@ redirect_from:
 * **Software Engineering Intern** - AdNovum, 2015  
   I worked on a mobile payment app, implementing several parts of the iOS version of the app in Objective-C. My main responsibilities were: Feature implementation, bug-fixing and Proof of Concept. The work took place in large teams and was managed with Scrum and the use of tools such as Jira and Confluence.
   
+## Publications
+
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 ## Awards
 
 * **Joint Alumni Association in Computer Science (JAACS):**  
@@ -47,15 +54,12 @@ redirect_from:
 * **Programming Languages:**  
   Python, MATLAB/Octave, Java, Objective-C, LaTeX
   
+* **Frameworks:**  
+  Tensorflow, PyTorch, Caffe, SciPy, Numpy, OpenCV
+  
 * **Languages:**  
   German (native), English (fluent), French
 
-## Publications
-
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 ## Teaching
 
   <ul>{% for post in site.teaching %}

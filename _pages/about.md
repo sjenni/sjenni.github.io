@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year PhD student in the Computer Vision Group at the University of Bern, supervised by Prof. Dr. Paolo Favaro. I received my BSc degree in Computer Science in 2015 and my MSc degree in Computer Science in 2017, both at the University of Bern. My research interests are in computer vision, machine learning and deep learning with a focus on unsupervised representation learning.
+I am a fourth-year PhD student in the Computer Vision Group at the University of Bern, supervised by Prof. Dr. Paolo Favaro. I received my BSc degree in Computer Science in 2015 and my MSc degree in Computer Science in 2017, both at the University of Bern. My research interests are in computer vision and deep learning. More specifically, I am interested in methods that learn representations of visual data without human supervision.
 
 ---------
 

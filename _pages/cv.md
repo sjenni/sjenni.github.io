@@ -12,8 +12,8 @@ redirect_from:
 ## Education
 
 * **PhD in Computer Science** - University of Bern, 2017-present  
-  **_Topics:_** Analysis and design of self-supervised learning methods
-  **_Advisor:_** Prof. Paolo Favaro
+  **_Topics:_** Analysis and design of self-supervised learning methods  
+  Advisor: Prof. Paolo Favaro
 
 * **MSc in Computer Science** - University of Bern, 2017  
   With specialization in Advanced Information Processing – *summa cum laude*  
@@ -26,10 +26,10 @@ redirect_from:
 ## Professional Experience
 
 * **Junior Data Analyst** - Philip Morris International, 2016  
-  I developed a Matlab tool for the automatic analysis of ciliary beating movies. The tool allows the extraction of key endpoints such as tissue activity and main beating frequencies with a higher accuracy compared to previous methods. By tracking tissue patches over different videos it also allows the analysis of regions over a longer period of time.
+  Development of a Matlab tool for the automatic analysis of ciliary beating videos. The tool extracts key features such as tissue activity and main beating frequency with higher accuracy than prior methods.
 
 * **Software Engineering Intern** - AdNovum, 2015  
-  I worked on a mobile payment app, implementing several parts of the iOS version of the app in Objective-C. My main responsibilities were: Feature implementation, bug-fixing and Proof of Concept. The work took place in large teams and was managed with Scrum and the use of tools such as Jira and Confluence.
+  I worked on a mobile payment app, implementing several parts of the iOS version in Objective-C.
   
 ## Publications
 

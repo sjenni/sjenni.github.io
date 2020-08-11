@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[[PDF]](http://sjenni.github.io/files/CV_Simon_Jenni.pdf)
+
 ## Education
 
 * **PhD in Computer Science** - University of Bern, 2017-present  

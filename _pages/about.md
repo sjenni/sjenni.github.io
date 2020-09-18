@@ -14,7 +14,7 @@ I am a fourth-year PhD student in the Computer Vision Group at the University of
 
 ## News
 
-* ***September, 2020:*** A paper on self-supervised multi-view synchronization learning for 3D human pose estimation got accepted to ACCV2020
+* ***September, 2020:*** A paper on self-supervised multi-view synchronization learning for 3D human pose estimation got accepted to ACCV2020 (oral)
 
 * ***July, 2020:*** Our paper on self-supervised video representation learning by learning to tell motions appart got accepted to ECCV2020
 

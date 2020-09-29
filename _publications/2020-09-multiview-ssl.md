@@ -7,7 +7,7 @@ venue: 'Asian Conference on Computer Vision 2020 (oral)'
 citation: 'S. Jenni, and P. Favaro. &quot;Self-Supervised Multi-View Synchronization Learning for 3D Pose Estimation.&quot; In <i>ACCV 2020</i>.'
 ---
 
-[[PDF]](https://arxiv.org/pdf/2007.10730.pdf) [[Project Page]](https://sjenni.github.io/temporal-ssl/) [[Code]](https://github.com/sjenni/temporal-ssl) 
+[[Project Page]](https://sjenni.github.io/multiview-sync-ssl/) [[Code]](https://github.com/sjenni/multiview-sync-ssl) 
 
 ## Abstract
 

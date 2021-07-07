@@ -15,9 +15,9 @@ Previously, I was a PhD student in the Computer Vision Group at the University o
 
 ## News
 
-* ***June, 2020:*** I succesfully defended my PhD  
+* ***June, 2021:*** I succesfully defended my PhD  
 
-* ***May, 2020:*** I joined Adobe Research as a Research Scientist
+* ***May, 2021:*** I joined Adobe Research as a Research Scientist
 
 * ***November, 2020:*** I will be joining Adobe Research as a Deep Learning Research Intern at the beginning of 2021 
 

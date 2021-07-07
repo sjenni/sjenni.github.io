@@ -8,11 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year PhD student in the Computer Vision Group at the University of Bern, supervised by Prof. Dr. Paolo Favaro. I received my BSc degree in Computer Science in 2015 and my MSc degree in Computer Science in 2017, both at the University of Bern. My research interests are in computer vision and deep learning. More specifically, I am interested in methods that learn representations of visual data without human supervision.
+I am a Research Scientist at Adobe Research. My research interests are in computer vision and deep learning, focusing on self-supervised learning methods for images and videos.
+Previously, I was a PhD student in the Computer Vision Group at the University of Bern, supervised by Paolo Favaro. I received my BSc degree in Computer Science in 2015 and my MSc degree in Computer Science in 2017, both at the University of Bern. 
 
 ---------
 
 ## News
+
+* ***June, 2020:*** I succesfully defended my PhD  
+
+* ***May, 2020:*** I joined Adobe Research as a Research Scientist
 
 * ***November, 2020:*** I will be joining Adobe Research as a Deep Learning Research Intern at the beginning of 2021 
 

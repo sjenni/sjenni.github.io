@@ -15,6 +15,8 @@ Previously, I was a PhD student in the Computer Vision Group at the University o
 
 ## News
 
+* ***August, 2020:*** A paper on time-equivariant contrastive video representation learning got accepted to ICCV2021 (oral)
+
 * ***June, 2021:*** I succesfully defended my PhD  
 
 * ***May, 2021:*** I joined Adobe Research as a Research Scientist

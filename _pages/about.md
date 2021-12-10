@@ -15,6 +15,8 @@ Previously, I was a PhD student in the Computer Vision Group at the University o
 
 ## News
 
+* ***December, 2021:*** A paper on video provenance won the best paper award at CVMP 2021
+
 * ***August, 2021:*** A paper on time-equivariant contrastive video representation learning got accepted to ICCV2021 (oral)
 
 * ***June, 2021:*** I succesfully defended my PhD  

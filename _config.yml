@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Simon Jenni"
 title_separator          : "-"
 name                     : &name "Simon Jenni"
-description              : &description "PhD student at the University of Bern"
+description              : &description "Research Scientist at Adobe Research"
 url                      : https://sjenni.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sjenni.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Simon Jenni"
   avatar           : "simonjenni.jpg"
-  bio              : "PhD Student at the University of Bern"
-  location         : "Bern, Switzerland"
+  bio              : "Research Scientist at Adobe Research"
+  location         : "Switzerland"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=de&user=AlA3q94AAAAJ"

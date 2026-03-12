@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simon Jenni — Senior Research Scientist, Adobe Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAFAF8;
+    --bg-alt: #F2F0EC;
+    --text: #1A1A1A;
+    --text-secondary: #5C5C5C;
+    --accent: #B44A2D;
+    --accent-light: #D4896F;
+    --border: #E0DDD8;
+    --card-bg: #FFFFFF;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: white; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250, 250, 248, 0.85);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .nav-inner {
+    max-width: 1100px; margin: 0 auto; padding: 0 40px;
+    height: 60px; display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .nav-name {
+    font-family: var(--serif); font-size: 18px;
+    color: var(--text); text-decoration: none; letter-spacing: -0.02em;
+  }
+  nav .nav-links { display: flex; gap: 32px; list-style: none; }
+  nav .nav-links a {
+    font-size: 13px; font-weight: 500; color: var(--text-secondary);
+    text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; transition: color 0.2s;
+  }
+  nav .nav-links a:hover { color: var(--accent); }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 160px 40px 100px; max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 260px; gap: 80px; align-items: start;
+  }
+  .hero-text h1 {
+    font-family: var(--serif); font-size: clamp(40px, 5vw, 56px);
+    line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 24px;
+  }
+  .hero-text h1 span {
+    display: block; font-family: var(--sans); font-size: 18px; font-weight: 400;
+    color: var(--text-secondary); letter-spacing: 0; line-height: 1.6; margin-top: 8px;
+  }
+  .hero-bio {
+    font-size: 17px; line-height: 1.8; color: var(--text-secondary);
+    max-width: 600px; margin-bottom: 32px;
+  }
+  .hero-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .hero-links a {
+    font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
+    color: var(--text); text-decoration: none;
+    padding: 8px 16px; border: 1px solid var(--border); border-radius: 6px; transition: all 0.2s;
+  }
+  .hero-links a:hover { border-color: var(--accent); color: var(--accent); background: rgba(180,74,45,0.04); }
+
+  .hero-photo { position: relative; }
+  .hero-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 12px; }
+  .hero-photo::after {
+    content: ''; position: absolute; inset: 8px -8px -8px 8px;
+    border: 2px solid var(--accent-light); border-radius: 12px; z-index: -1; opacity: 0.4;
+  }
+
+  /* ─── SECTIONS ─── */
+  section { max-width: 1100px; margin: 0 auto; padding: 0 40px 100px; }
+  .section-header {
+    display: flex; align-items: baseline; gap: 16px;
+    margin-bottom: 48px; border-bottom: 1px solid var(--border); padding-bottom: 16px;
+  }
+  .section-header h2 { font-family: var(--serif); font-size: 28px; letter-spacing: -0.02em; }
+  .section-header .section-note { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+  .section-header .section-note a { color: var(--accent); text-decoration: none; }
+
+  /* ─── RESEARCH ─── */
+  .research-areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .research-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: 10px; padding: 32px 28px; transition: all 0.3s ease;
+  }
+  .research-card:hover { border-color: var(--accent-light); box-shadow: 0 8px 32px rgba(0,0,0,0.06); transform: translateY(-2px); }
+  .research-card h3 { font-family: var(--serif); font-size: 20px; margin-bottom: 12px; }
+  .research-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+  .research-card .card-tag { display: inline-block; margin-top: 16px; font-family: var(--mono); font-size: 11px; color: var(--accent); }
+
+  /* ─── PRODUCT IMPACT ─── */
+  .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .product-card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 28px; display: flex; flex-direction: column; gap: 8px;
+    transition: all 0.3s ease; text-decoration: none; color: inherit;
+  }
+  .product-card:hover { border-color: var(--accent-light); box-shadow: 0 8px 32px rgba(0,0,0,0.06); transform: translateY(-2px); }
+  .product-card .product-name { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+  .product-card .product-name .arrow { font-size: 14px; color: var(--accent); opacity: 0; transition: opacity 0.2s, transform 0.2s; }
+  .product-card:hover .product-name .arrow { opacity: 1; transform: translateX(4px); }
+  .product-card .product-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .product-card .product-tech { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-top: 4px; }
+
+  /* ─── PUBLICATIONS ─── */
+  .pub-year-group { margin-bottom: 48px; }
+  .pub-year {
+    font-family: var(--mono); font-size: 14px; color: var(--accent);
+    margin-bottom: 16px; position: sticky; top: 72px; background: var(--bg); padding: 8px 0; z-index: 10;
+  }
+  .pub-item {
+    padding: 20px 0; border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start;
+  }
+  .pub-item:last-child { border-bottom: none; }
+  .pub-title { font-weight: 500; font-size: 15px; line-height: 1.5; margin-bottom: 4px; }
+  .pub-authors { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; }
+  .pub-authors strong { color: var(--text); font-weight: 600; }
+  .pub-venue { font-size: 13px; color: var(--text-secondary); }
+  .pub-venue em { font-style: normal; font-weight: 500; color: var(--text); }
+  .pub-badge {
+    display: inline-block; font-family: var(--mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px;
+    background: rgba(180,74,45,0.08); color: var(--accent); margin-left: 8px; vertical-align: middle;
+  }
+  .pub-meta { display: flex; gap: 12px; align-items: center; flex-shrink: 0; }
+  .pub-citations { font-family: var(--mono); font-size: 12px; color: var(--text-secondary); white-space: nowrap; }
+
+  /* ─── NEWS ─── */
+  .news-item {
+    display: grid; grid-template-columns: 120px 1fr; gap: 24px;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-date { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+  .news-text { font-size: 15px; color: var(--text-secondary); }
+  .news-text strong { color: var(--text); font-weight: 500; }
+
+  /* ─── STATS ─── */
+  .stats-bar { margin-bottom: 100px; }
+  .stats-bar-inner { display: flex; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stat { flex: 1; padding: 24px 0; text-align: center; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-number { font-family: var(--serif); font-size: 32px; color: var(--accent); display: block; line-height: 1.2; }
+  .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-top: 4px; }
+
+  /* ─── AWARDS ─── */
+  .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .award-item { padding: 24px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; }
+  .award-item h4 { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+  .award-item p { font-size: 13px; color: var(--text-secondary); }
+  .award-year { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    max-width: 1100px; margin: 0 auto; padding: 40px 40px 60px;
+    border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;
+  }
+  footer p { font-size: 13px; color: var(--text-secondary); }
+  footer .footer-links { display: flex; gap: 24px; }
+  footer .footer-links a { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+  footer .footer-links a:hover { color: var(--accent); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; gap: 40px; padding: 120px 24px 60px; }
+    .hero-photo { order: -1; max-width: 200px; }
+    section { padding: 0 24px 60px; }
+    .stats-bar-inner { flex-wrap: wrap; }
+    .stat { flex: 1 1 50%; border-bottom: 1px solid var(--border); }
+    .research-areas { grid-template-columns: 1fr; }
+    .product-grid { grid-template-columns: 1fr; }
+    .awards-grid { grid-template-columns: 1fr; }
+    nav .nav-inner { padding: 0 24px; }
+    nav .nav-links { gap: 16px; }
+    nav .nav-links a { font-size: 12px; }
+    .pub-item { grid-template-columns: 1fr; }
+    .news-item { grid-template-columns: 1fr; gap: 4px; }
+    footer { flex-direction: column; gap: 16px; }
+  }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-text { animation: fadeUp 0.7s ease-out; }
+  .hero-photo { animation: fadeUp 0.7s ease-out 0.15s both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Simon Jenni</a>
+    <ul class="nav-links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#news">News</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>
+      Simon Jenni
+      <span>Senior Research Scientist at Adobe Research</span>
+    </h1>
+    <p class="hero-bio">
+      I build vision-language models and multimodal representations that power search, retrieval, and content understanding across Adobe's creative products. My work also spans visual fingerprinting and content authenticity. Previously, I completed my PhD at the University of Bern, supervised by Paolo Favaro.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:jenni@adobe.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=AlA3q94AAAAJ&hl=de">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/simon-jenni-37ba75131/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="profile.jpeg" alt="Simon Jenni">
+  </div>
+</div>
+
+<section id="research">
+  <div class="section-header"><h2>Research</h2></div>
+  <div class="research-areas">
+    <div class="research-card">
+      <h3>Vision-Language Models</h3>
+      <p>Developing multimodal embedding models for visual search, retrieval, aesthetic prediction, and content recommendation. Applications include spatial understanding for intelligent reframing and content repurposing workflows.</p>
+      <span class="card-tag">Embeddings · VLMs · Retrieval · Reframing</span>
+    </div>
+    <div class="research-card">
+      <h3>Visual Fingerprinting &amp; Matching</h3>
+      <p>Robust image and video fingerprinting applied to content provenance, training data deduplication, asset management, and platform moderation at scale.</p>
+      <span class="card-tag">Fingerprinting · Deduplication · Provenance</span>
+    </div>
+    <div class="research-card">
+      <h3>Self-Supervised Learning</h3>
+      <p>Training strategies for learning visual and multimodal representations without human annotation, from images, video, and audio.</p>
+      <span class="card-tag">Contrastive · Video · Audio</span>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="section-header">
+    <h2>Product Impact</h2>
+    <span class="section-note">Research shipped into products</span>
+  </div>
+  <div class="product-grid">
+    <a class="product-card" href="https://helpx.adobe.com/premiere-pro/using/media-intelligence-and-search-panel.html" target="_blank" rel="noopener">
+      <div class="product-name">Premiere Pro — Search Panel <span class="arrow">→</span></div>
+      <div class="product-desc">AI-powered media intelligence for searching and navigating video clips using natural language and visual similarity.</div>
+      <div class="product-tech">Vision-language embeddings</div>
+    </a>
+    <a class="product-card" href="https://helpx.adobe.com/lightroom-cc/web/create-albums-and-organize-photos/add-and-organize-photos/semantic-search.html" target="_blank" rel="noopener">
+      <div class="product-name">Lightroom — Semantic Search <span class="arrow">→</span></div>
+      <div class="product-desc">Find photos using natural language descriptions, going beyond keywords and metadata to understand visual content.</div>
+      <div class="product-tech">Vision-language embeddings</div>
+    </a>
+    <a class="product-card" href="https://helpx.adobe.com/lightroom-classic/help/auto-stack.html" target="_blank" rel="noopener">
+      <div class="product-name">Lightroom — Auto Stack &amp; Culling <span class="arrow">→</span></div>
+      <div class="product-desc">Automatically group visually similar photos and identify the best shots using visual similarity clustering and aesthetic quality prediction.</div>
+      <div class="product-tech">Visual similarity · Aesthetic prediction</div>
+    </a>
+    <a class="product-card" href="https://helpx.adobe.com/firefly/web/work-with-enterprise-features/creative-production/best-practices-for-reframe-video-in-creative-production.html" target="_blank" rel="noopener">
+      <div class="product-name">Firefly — Reframe Video <span class="arrow">→</span></div>
+      <div class="product-desc">Intelligently reframe video content for different aspect ratios in Adobe Firefly's creative production tools.</div>
+      <div class="product-tech">Conditional embeddings</div>
+    </a>
+    <a class="product-card" href="https://contentauthenticity.org/blog/durable-content-credentials" target="_blank" rel="noopener">
+      <div class="product-name">Durable Content Credentials <span class="arrow">→</span></div>
+      <div class="product-desc">Image fingerprinting for verifying content provenance, combining secure metadata, watermarking, and perceptual hashing.</div>
+      <div class="product-tech">Visual fingerprinting</div>
+    </a>
+    <a class="product-card" href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/smart-tags" target="_blank" rel="noopener">
+      <div class="product-name">AEM Assets — Smart Tags <span class="arrow">→</span></div>
+      <div class="product-desc">AI-powered automatic tagging of images in Adobe Experience Manager, enabling large-scale asset discovery and organization.</div>
+      <div class="product-tech">Vision-language embeddings</div>
+    </a>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="section-header">
+    <h2>Selected Publications</h2>
+    <span class="section-note">Full list on <a href="https://scholar.google.com/citations?user=AlA3q94AAAAJ&hl=de">Google Scholar</a></span>
+  </div>
+
+  <div class="pub-year-group">
+    <div class="pub-year">2025 – 2026</div>
+    <div class="pub-item"><div><div class="pub-title">Seeing Through Words: Controlling Visual Retrieval Quality with Language Models</div><div class="pub-authors">J. Lu, <strong>S. Jenni</strong>, K. Kafle, J. Shi, H. Zhao, Y. Fu</div><div class="pub-venue"><em>ICLR 2026</em></div></div><div class="pub-meta"></div></div>
+    <div class="pub-item"><div><div class="pub-title">The Photographer's Eye: Teaching Multimodal LLMs to See and Critique Like Photographers</div><div class="pub-authors">D. Qi, H. Zhao, J. Shi, <strong>S. Jenni</strong>, Y. Fan, F. Dernoncourt, S. Cohen, S. Li</div><div class="pub-venue"><em>CVPR 2025</em></div></div><div class="pub-meta"></div></div>
+    <div class="pub-item"><div><div class="pub-title">ViDROP: Video Dense Representation through Spatio-Temporal Sparsity</div><div class="pub-authors">S. Sameni, <strong>S. Jenni</strong>, P. Favaro</div><div class="pub-venue"><em>CVPR 2025</em></div></div><div class="pub-meta"></div></div>
+    <div class="pub-item"><div><div class="pub-title">The Indra Representation Hypothesis</div><div class="pub-authors">J. Lu, H. Wang, K. Yang, Y. Zhang, <strong>S. Jenni</strong>, Y. Fu</div><div class="pub-venue"><em>NeurIPS 2025</em></div></div><div class="pub-meta"></div></div>
+    <div class="pub-item"><div><div class="pub-title">Improving Large Vision and Language Models by Learning from a Panel of Peers</div><div class="pub-authors">J. Hernandez, J. Shi, <strong>S. Jenni</strong>, V. Ordonez, K. Kafle</div><div class="pub-venue"><em>ICCV 2025</em></div></div><div class="pub-meta"></div></div>
+    <div class="pub-item"><div><div class="pub-title">Magnet: Augmenting Generative Decoders with Representation Learning and Infilling</div><div class="pub-authors">S. Khosla, A. Tiwari, K. Kafle, <strong>S. Jenni</strong>, H. Zhao, J. Collomosse, J. Shi</div><div class="pub-venue"><em>ACL 2025</em></div></div><div class="pub-meta"></div></div>
+  </div>
+
+  <div class="pub-year-group">
+    <div class="pub-year">2024</div>
+    <div class="pub-item"><div><div class="pub-title">Building Vision-Language Models on Solid Foundations with Masked Distillation</div><div class="pub-authors">S. Sameni, K. Kafle, H. Tan, <strong>S. Jenni</strong></div><div class="pub-venue"><em>CVPR 2024</em></div></div><div class="pub-meta"><span class="pub-citations">21 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Sync from the Sea: Retrieving Alignable Videos from Large-Scale Datasets</div><div class="pub-authors">I.R. Dave, F.C. Heilbron, M. Shah, <strong>S. Jenni</strong></div><div class="pub-venue"><em>ECCV 2024</em> <span class="pub-badge">Oral</span></div></div><div class="pub-meta"><span class="pub-citations">5 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">FINEMATCH: Aspect-Based Fine-Grained Image and Text Mismatch Detection</div><div class="pub-authors">H. Hua, J. Shi, K. Kafle, <strong>S. Jenni</strong>, D. Zhang, J. Collomosse, S. Cohen, J. Luo</div><div class="pub-venue"><em>ECCV 2024</em></div></div><div class="pub-meta"><span class="pub-citations">28 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Concept Weaver: Enabling Multi-Concept Fusion in Text-to-Image Models</div><div class="pub-authors">G. Kwon, <strong>S. Jenni</strong>, D. Li, J.Y. Lee, J.C. Ye, F.C. Heilbron</div><div class="pub-venue"><em>CVPR 2024</em></div></div><div class="pub-meta"><span class="pub-citations">31 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">No More Shortcuts: Realizing the Potential of Temporal Self-Supervision</div><div class="pub-authors">I.R. Dave, <strong>S. Jenni</strong>, M. Shah</div><div class="pub-venue"><em>AAAI 2024</em></div></div><div class="pub-meta"><span class="pub-citations">18 cited</span></div></div>
+  </div>
+
+  <div class="pub-year-group">
+    <div class="pub-year">2021 – 2023</div>
+    <div class="pub-item"><div><div class="pub-title">Audio-Visual Contrastive Learning with Temporal Self-Supervision</div><div class="pub-authors"><strong>S. Jenni</strong>, A. Black, J. Collomosse</div><div class="pub-venue"><em>AAAI 2023</em></div></div><div class="pub-meta"><span class="pub-citations">32 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Meta-Personalizing Vision-Language Models to Find Named Instances in Video</div><div class="pub-authors">C.H. Yeh, B. Russell, J. Sivic, F.C. Heilbron, <strong>S. Jenni</strong></div><div class="pub-venue"><em>CVPR 2023</em></div></div><div class="pub-meta"><span class="pub-citations">22 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Time-Equivariant Contrastive Video Representation Learning</div><div class="pub-authors"><strong>S. Jenni</strong>, H. Jin</div><div class="pub-venue"><em>ICCV 2021</em> <span class="pub-badge">Oral</span></div></div><div class="pub-meta"><span class="pub-citations">76 cited</span></div></div>
+  </div>
+
+  <div class="pub-year-group">
+    <div class="pub-year">2018 – 2020</div>
+    <div class="pub-item"><div><div class="pub-title">Video Representation Learning by Recognizing Temporal Transformations</div><div class="pub-authors"><strong>S. Jenni</strong>, G. Meishvili, P. Favaro</div><div class="pub-venue"><em>ECCV 2020</em></div></div><div class="pub-meta"><span class="pub-citations">177 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Steering Self-Supervised Feature Learning Beyond Local Pixel Statistics</div><div class="pub-authors"><strong>S. Jenni</strong>, H. Jin, P. Favaro</div><div class="pub-venue"><em>CVPR 2020</em> <span class="pub-badge">Oral</span></div></div><div class="pub-meta"><span class="pub-citations">60 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Deep Bilevel Learning</div><div class="pub-authors"><strong>S. Jenni</strong>, P. Favaro</div><div class="pub-venue"><em>ECCV 2018</em></div></div><div class="pub-meta"><span class="pub-citations">168 cited</span></div></div>
+    <div class="pub-item"><div><div class="pub-title">Self-Supervised Feature Learning by Learning to Spot Artifacts</div><div class="pub-authors"><strong>S. Jenni</strong>, P. Favaro</div><div class="pub-venue"><em>CVPR 2018</em> <span class="pub-badge">Spotlight</span></div></div><div class="pub-meta"><span class="pub-citations">160 cited</span></div></div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="section-header"><h2>News</h2></div>
+  <div class="news-item"><div class="news-date">Jan 2026</div><div class="news-text">Paper accepted to <strong>ICLR 2026</strong></div></div>
+  <div class="news-item"><div class="news-date">2025</div><div class="news-text">Papers at <strong>CVPR</strong> (×2), <strong>ICCV</strong>, <strong>NeurIPS</strong>, and <strong>ACL</strong></div></div>
+  <div class="news-item"><div class="news-date">Oct 2024</div><div class="news-text">Video fingerprinting technology featured in <strong>Project KnowHow</strong> Sneak at Adobe MAX 2024</div></div>
+  <div class="news-item"><div class="news-date">Jan 2025</div><div class="news-text">Promoted to <strong>Senior Research Scientist</strong> at Adobe Research</div></div>
+  <div class="news-item"><div class="news-date">2024</div><div class="news-text">Papers at <strong>CVPR</strong> (×2), <strong>ECCV</strong> (×2, incl. oral), and <strong>AAAI</strong></div></div>
+  <div class="news-item"><div class="news-date">2023</div><div class="news-text">Papers at <strong>CVPR</strong>, <strong>ICCV</strong>, and <strong>AAAI</strong></div></div>
+  <div class="news-item"><div class="news-date">2022</div><div class="news-text"><strong>Faculty Prize</strong> for best PhD dissertation, University of Bern</div></div>
+  <div class="news-item"><div class="news-date">Dec 2021</div><div class="news-text"><strong>Best Paper Award</strong> at CVMP 2021</div></div>
+  <div class="news-item"><div class="news-date">May 2021</div><div class="news-text">Joined <strong>Adobe Research</strong></div></div>
+</section>
+
+<section>
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat"><span class="stat-number">1,100+</span><div class="stat-label">Citations</div></div>
+      <div class="stat"><span class="stat-number">29</span><div class="stat-label">Publications</div></div>
+      <div class="stat"><span class="stat-number">6</span><div class="stat-label">Granted Patents</div></div>
+      <div class="stat"><span class="stat-number">16</span><div class="stat-label">h-index</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="section-header"><h2>Awards</h2></div>
+  <div class="awards-grid">
+    <div class="award-item"><span class="award-year">2022</span><h4>Best PhD Dissertation</h4><p>Faculty Prize, University of Bern</p></div>
+    <div class="award-item"><span class="award-year">2021</span><h4>Best Paper Award</h4><p>CVMP 2021</p></div>
+    <div class="award-item"><span class="award-year">2019 · 2020 · 2022</span><h4>Outstanding Reviewer</h4><p>CVPR 2019 (top 1%), ECCV 2020, ECCV 2022</p></div>
+    <div class="award-item"><span class="award-year">2018</span><h4>Best Poster Award</h4><p>PRAIRIE/MIAI AI Summer School</p></div>
+    <div class="award-item"><span class="award-year">2017</span><h4>Best Master Thesis</h4><p>Joint Alumni Association in Computer Science</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Simon Jenni</p>
+  <div class="footer-links">
+    <a href="mailto:jenni@adobe.com">Email</a>
+    <a href="https://scholar.google.com/citations?user=AlA3q94AAAAJ&hl=de">Scholar</a>
+    <a href="https://www.linkedin.com/in/simon-jenni-37ba75131/">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
